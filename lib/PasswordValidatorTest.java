@@ -32,8 +32,8 @@ public class PasswordValidatorTest{
             }else {
             System.out.println("Test Case 3 FAILED:"+ pw+ " :Expected MEDIUM but got " + result3);
             }
-        //Test Case 4: รหัสผ่านที่มีตัวอักษรengตัวเล็ก ตัวใหญ่ ตัวเลขด้วยควรจะ STRONG
-        pw = "Max2901";
+        //Test Case 4: รหัสผ่านที่มีตัวอักษรengตัวเล็ก ตัวใหญ่ ตัวเลข และตัวอักษรพิเศษ ด้วยควรจะ STRONG
+        pw = "Maxx2549.";
         PasswordStrength result4 = PasswordValidator.validate(pw);
         
         if(result4 == PasswordStrength.STRONG){
